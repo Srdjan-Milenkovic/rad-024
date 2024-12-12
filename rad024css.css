@@ -47,6 +47,33 @@ height: 14.2857142857vh;}
 #topitem{border-radius: 0px 10px 0px 0px;}
 #bottomitem{border-radius: 0px 0px 10px 0px;}
 
+#mobileitem svg{transform: scale(2);
+}
+#mobileitem{gap: 28px;
+display: none;}
+
+.mobilemenu{position: absolute;
+    right:-0px;
+}
+
+#firstitem{border-radius: 10px 0px 0px 0px;
+}
+#lastitem{border-radius: 0px 0px 0px 10px;}
+
+
+.mobilemenu a{color: white;
+text-decoration: none;
+transition: 300ms;
+display: flex;
+width: 294px;
+height: 100px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+background: var(--primary);}
+.mobilemenu a svg{transform:rotate(180deg) ;}
+.mobilemenu a:hover{background-color: var(--accent2);
+transition: 300ms;}
 
 .productmenu a{color: black;
 text-decoration: none;
@@ -90,8 +117,14 @@ header svg:hover path{fill:var(--secondary);
 transition: 300ms;
 }
 
-#menu{display: none;
-}
+#menu {display: block;
+font-size: 60px;
+cursor: pointer;
+color: var(--accent1);
+transition: 300ms;}
+#menu:hover{color: var(--secondary);
+transition: 300ms;}
+
 .content{display: flex;
     padding: 0px 50px;
     justify-content: space-between;
