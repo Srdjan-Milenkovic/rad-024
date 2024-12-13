@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="rad024js.js"></script>
     <link rel="stylesheet" href="rad024css.css">
     <link rel="icon" type="image/x-icon" href="img/logo.svg">
@@ -21,7 +21,7 @@
       </svg>
     <div class="headertext">
         <a href="#">Početna</a>
-        <a href="#" onclick="productmenu()" id="usluge" class="usluge">Usluge i produkti <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+        <a href="#" onclick="productmenu()" id="usluge" class="usluge">Usluge i produkti <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none" id="productsvg">
           <path d="M6.88286 0.00500011L6.94086 0H7.05886L7.11686 0.00500011L7.17686 0.0139999L7.22886 0.0240002L7.33686 0.0560002L7.40386 0.0830002L7.53586 0.153L7.62586 0.218L7.70686 0.291L7.78986 0.385L7.84386 0.462L7.89786 0.558L7.91486 0.594L7.94186 0.661L7.97386 0.769L7.98386 0.822L7.99386 0.882L7.99786 0.939L7.99986 0.998V12.998C7.99986 13.85 7.01386 14.295 6.37686 13.781L6.29286 13.705L0.292861 7.705C0.120685 7.53281 0.0172534 7.30371 0.00197221 7.06068C-0.013309 6.81766 0.06061 6.5774 0.209861 6.385L0.292861 6.291L6.29286 0.291L6.38686 0.208L6.46386 0.154L6.55986 0.1L6.59586 0.0830002L6.66286 0.0560002L6.77086 0.0240002L6.82386 0.0139999L6.88386 0.00400019L6.88286 0.00500011Z" fill="white"/>
         </svg></a>
         <a href="#">Lokacije</a>
@@ -40,8 +40,8 @@
           </svg>
           <div class="profile"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
             <g clip-path="url(#clip0_5785_503)">
-              <path d="M30 5C32.4723 5 34.889 5.73311 36.9446 7.10663C39.0002 8.48015 40.6024 10.4324 41.5485 12.7165C42.4946 15.0005 42.7421 17.5139 42.2598 19.9386C41.7775 22.3634 40.587 24.5907 38.8388 26.3388C37.0907 28.087 34.8634 29.2775 32.4386 29.7598C30.0139 30.2421 27.5005 29.9946 25.2165 29.0485C22.9324 28.1024 20.9801 26.5002 19.6066 24.4446C18.2331 22.389 17.5 19.9723 17.5 17.5L17.5125 16.9575C17.6523 13.7394 19.029 10.6994 21.3556 8.47165C23.6821 6.24385 26.7788 5.00019 30 5Z" fill="#E4F7FF"/>
-              <path d="M35 35C38.3152 35 41.4946 36.317 43.8388 38.6612C46.183 41.0054 47.5 44.1848 47.5 47.5V50C47.5 51.3261 46.9732 52.5979 46.0355 53.5355C45.0979 54.4732 43.8261 55 42.5 55H17.5C16.1739 55 14.9021 54.4732 13.9645 53.5355C13.0268 52.5979 12.5 51.3261 12.5 50V47.5C12.5 44.1848 13.817 41.0054 16.1612 38.6612C18.5054 36.317 21.6848 35 25 35H35Z" fill="#E4F7FF"/>
+              <path d="M30 10C32.4723 10 34.889 10.7331 36.9446 12.1066C39.0002 13.4801 40.6024 15.4324 41.5485 17.7165C42.4946 20.0005 42.7421 22.5139 42.2598 24.9386C41.7775 27.3634 40.587 29.5907 38.8388 31.3388C37.0907 33.087 34.8634 34.2775 32.4386 34.7598C30.0139 35.2421 27.5005 34.9946 25.2165 34.0485C22.9324 33.1024 20.9801 31.5002 19.6066 29.4446C18.2331 27.389 17.5 24.9723 17.5 22.5L17.5125 21.9575C17.6523 18.7394 19.029 15.6994 21.3556 13.4716C23.6821 11.2439 26.7788 10.0002 30 10Z" fill="#E4F7FF"/>
+              <path d="M35 40C38.3152 40 41.4946 41.317 43.8388 43.6612C46.183 46.0054 47.5 49.1848 47.5 52.5V55C47.5 56.3261 46.9732 57.5979 46.0355 58.5355C45.0979 59.4732 43.8261 60 42.5 60H17.5C16.1739 60 14.9021 59.4732 13.9645 58.5355C13.0268 57.5979 12.5 56.3261 12.5 55V52.5C12.5 49.1848 13.817 46.0054 16.1612 43.6612C18.5054 41.317 21.6848 40 25 40H35Z" fill="#E4F7FF"/>
             </g>
             <defs>
               <clipPath id="clip0_5785_503">
@@ -55,7 +55,7 @@
     
  </header> 
 <div class="productmenu">
-  <h1><a href="#" id="mobileitem"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+  <h1><a href="#" id="mobileitem" class="mobileitem"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M18 6l-12 12" />
     <path d="M6 6l12 12" />
@@ -69,13 +69,13 @@
 </div>
 
 <div class="mobilemenu">
-<h1><a href="$" id="firstitem">Početna</a></h1>
-<h1><a href="$">Usluge i produkti <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+<h1><a href="#" id="firstitem">Početna</a></h1>
+<h1><a href="#" onclick="productmenu()">Usluge i produkti <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
   <path d="M6.88286 0.00500011L6.94086 0H7.05886L7.11686 0.00500011L7.17686 0.0139999L7.22886 0.0240002L7.33686 0.0560002L7.40386 0.0830002L7.53586 0.153L7.62586 0.218L7.70686 0.291L7.78986 0.385L7.84386 0.462L7.89786 0.558L7.91486 0.594L7.94186 0.661L7.97386 0.769L7.98386 0.822L7.99386 0.882L7.99786 0.939L7.99986 0.998V12.998C7.99986 13.85 7.01386 14.295 6.37686 13.781L6.29286 13.705L0.292861 7.705C0.120685 7.53281 0.0172534 7.30371 0.00197221 7.06068C-0.013309 6.81766 0.06061 6.5774 0.209861 6.385L0.292861 6.291L6.29286 0.291L6.38686 0.208L6.46386 0.154L6.55986 0.1L6.59586 0.0830002L6.66286 0.0560002L6.77086 0.0240002L6.82386 0.0139999L6.88386 0.00400019L6.88286 0.00500011Z" fill="white"/>
 </svg></a></h1>
-<h1><a href="$">Lokacije</a></h1>
-<h1><a href="$">O nama</a></h1>
-<h1><a href="$" id="lastitem">Profil</a></h1>
+<h1><a href="#">Lokacije</a></h1>
+<h1><a href="#">O nama</a></h1>
+<h1><a href="#" id="lastitem">Profil</a></h1>
 
 </div>
 
