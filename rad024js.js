@@ -23,10 +23,11 @@ $(".productmenu").css({"left":"0px","transition":"300ms"})
 }
 }
 
-function openmenu(){
+function openmenu(){   
 $(".mobilemenu").css({"right":"0px","transition":"300ms"})
 if($(".mobilemenu").css("right") == "0px"){
     $(".mobilemenu").css({"right":"-350px","transition":"300ms"})
+    
 }
 
 }
