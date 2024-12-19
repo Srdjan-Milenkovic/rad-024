@@ -11,15 +11,13 @@ $("#usluge").css("color",secondary)
 $("#usluge svg").css("transform","rotate(-180deg)")
 $("#usluge svg path").css("fill",secondary)
 if($(".productmenu").css("left") == "0px"){
-    $(".productmenu").css({"left":"-110vw","transition":"900ms","margin-right":"0px"})
+    $(".productmenu").css({"left":"-210vw","transition":"900ms"})
     $("#usluge").css("color",accent1)
     $("#usluge svg").css("transform","rotate(-90deg)")
     $("#usluge svg path").css("fill", accent1)
 }
 if($(".mobilemenu").css("right") == "0px"){
 $(".mobilemenu").css({"right":"-350px","transition":"300ms"})
-$(".productmenu").css({"left":"0px","transition":"300ms"})
-
 }
 }
 
@@ -41,7 +39,7 @@ $(window).resize(function(){
 
 $(document).ready(function(){
 $(".mobileitem").click(function(){
-$(".productmenu").css({"left":"-110vw","transition":"300ms"})
+$(".productmenu").css({"left":"-210vw","transition":"900ms"})
 $("#usluge").css("color",accent1)
 $("#usluge svg").css("transform","rotate(-90deg)")
 $("#usluge svg path").css("fill", accent1)
